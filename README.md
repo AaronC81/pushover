@@ -8,9 +8,10 @@ Pushover is a stack-based programming language. If you've ever used Forth or
 BibTeX's BST language, then this is extremely similar. Output is a GraphViz
 DOT file for your automaton.
 
-Output automata have their result at the top of the stack and will indicate
-string acceptance to show success. In the case of something invalid occuring,
-the stack should be occured, and that string will be rejected.
+Output automata will behave so that, given an input string, 
+the program result is at the top of the stack, and the automaton and will finish
+on an accepting state to show success. In the case of something invalid occuring,
+the stack should be ignored, and that string will be rejected.
 
 A somewhat interesting side effect of this is that, if converted to a grammar,
 your program's automaton yields the language of inputs which will make the
