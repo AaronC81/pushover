@@ -17,9 +17,9 @@ A somewhat interesting side effect of this is that, if converted to a grammar,
 your program's automaton yields the language of inputs which will make the
 program execute successfully.
 
-Arithmetic is performed by hardcoded transition tables of numbers up to `2^n`
+Arithmetic is performed by hardcoded transition tables of numbers up to `2^n - 1`
 for Pushover running in `n`-bit arithmetic mode. The automaton's Σ is
-`{1, 2, ..., 2^n, T, F, U}`.
+`{0, 1, 2, ..., 2^n - 1, T, F, U}`.
 
 So far, there's no actual syntax, but it will look like this when implemented 
 for a program which reads two input numbers and adds them:
